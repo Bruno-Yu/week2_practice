@@ -1,0 +1,168 @@
+// variables
+$danger:#891818;
+$secondary:#707070;
+
+// base
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+body{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  font-family:'Roboto' ,sans-serif;
+  font-style: italic;
+
+}
+
+img{
+  vertical-align: center;
+}
+a{
+  text-decoration: none;
+}
+h1{
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 106px;
+}
+h2{
+  font-size: 64px;
+  line-height: 84px;
+    padding-top: 56px;
+}
+h3{
+  font-size: 24px;
+  line-height: 36px;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.banner{
+  height: 100vh;
+  color:white;
+  background-image: url(../pics/banner.png);
+  background-position: center ;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container{
+    max-width: 304px;
+    small{
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 24px;
+    }
+    h3{
+      padding-top: 32px;
+      padding-bottom: 40px;
+    }
+    ul{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+.about{
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    img{
+      margin-top: 40px;
+      margin-bottom: 20px;
+
+    }
+    .mb-4{
+      margin-bottom: 4px;
+    }
+    .mb-8{
+      margin-bottom: 8px;
+    }
+    .mb-20{
+      margin-bottom: 20px;
+    }
+    ul{
+      margin-bottom: 56px;
+      border-top: 1px solid #000;
+      li{
+        margin-top: 28px;
+        &::before{
+          height: 22px;
+          width: 22px;
+          background: $danger;
+          content:'';
+          display: inline-block;
+          margin-right: 16px;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+
+.brand{
+  color:white;
+  background-color:black;
+
+  .container{
+  text-align: center;
+  padding-bottom: 160px;
+  }
+
+  h3{
+    padding-top: 12px;
+    margin-bottom: 32px;
+  }
+  p{
+    font-style: normal;
+    margin-bottom: 60px;
+  }
+  &-images{
+    justify-content: space-between;
+    margin-top: 40px;
+
+  }
+}
+.work{
+  text-align: center;
+  padding-bottom: 144px;
+  a{
+        color:black;
+  }
+  p{
+    padding-top: 16px;
+    padding-bottom: 56px;
+  }
+  ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 24px;
+
+    li{
+      p{
+        padding-top: 16px;
+      }
+    }
+  }
+}
+.footer{
+  background-color: black;
+  color:white;
+  padding-top: 6px;
+  padding-bottom: 64px;
+  text-align: center;
+  h3{
+    padding-top: 16px;
+  }
+  a{
+    color:white
+  }
+}
